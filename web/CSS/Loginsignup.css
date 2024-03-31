@@ -1,0 +1,269 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 2, 2024, 12:54:15 AM
+    Author     : haqua
+*/
+
+/* Reset CSS */
+*,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: intro;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bar {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    z-index: 2;
+    padding: 16px;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-bar img {
+    max-width: 250px;
+}
+
+.list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-family: intro;
+    font-weight: 700;
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    gap: 15px;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.list a:hover {
+    color: rgb(173, 250, 58);
+    text-decoration: none;
+    transition: 0.5;
+}
+
+/* Search and Login */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    margin-right: 5px;
+}
+
+.search li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.search a {
+    text-decoration: none;
+}
+
+.login {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.login h5 {
+    margin-bottom: 0;
+}
+
+.form-register {
+    /* margin-left: 3%; */
+}
+
+.form-login input {
+    width: 360px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 13px;
+    /* color: rgb(240, 236, 236); */
+}
+
+.form-register input {
+    width: 360px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 13px;
+}
+
+.form-register button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.form-login button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 48px;
+}
+
+.line {
+    width: 1px;
+    min-height: 240px;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #2B292C;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer_Left,
+.footer_Right {
+    width: 45%;
+}
+
+.footer_Left hr,
+.footer_Right hr {
+    border: 1px solid #869791;
+    margin-bottom: 20px;
+}
+
+.footer_content {
+    display: flex;
+}
+
+.footer_link,
+.footer_support {
+    flex: 1;
+}
+
+.footer_link ul,
+.footer_support ul {
+    list-style: none;
+}
+
+.footer_link ul li,
+.footer_support ul li {
+    margin-bottom: 10px;
+}
+
+.footer_link ul li a,
+.footer_support ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link ul li a:hover,
+.footer_support ul li a:hover {
+    color: #EE4D2D;
+}
+
+.footer_support ul li:last-child {
+    margin-right: 0;
+}
+
+hr {
+    border-top: dotted 1px #C8C8C8;
+}
+
+.footer_link_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_icon {
+    font-size: 50px;
+    /* color: white; */
+}
+.Teas-inner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+    z-index: 9999 !important;
+    background-color: #2B292C;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-inner {
+    padding-right: 15px;
+}
+
+.Teas-inner.show {
+    display: flex;
+}
+
+.Teas-inner .fa-caret-up {
+    position: absolute;
+    text-align: center;
+    color: #2B292C;
+    font-size: 25px;
+    cursor: pointer;
+    top: -14px;
+    right: 51%;
+}
+
+.produce-inner {
+    list-style: none;
+
+}
+
+.produce-inner a {
+    text-decoration: none;
+    color: white;
+    font-family: intros;
+}

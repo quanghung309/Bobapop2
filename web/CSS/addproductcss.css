@@ -1,0 +1,195 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 6, 2024, 11:37:18 PM
+    Author     : haqua
+*/
+*,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bar {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    z-index: 2;
+    padding: 16px;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-bar img {
+    max-width: 250px;
+}
+
+.list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-family: intro;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    gap: 15px;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list a:hover {
+    color: rgb(173, 250, 58);
+    text-decoration: none;
+    transition: 0.5;
+}
+
+/* Search and Login */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    margin-right: 5px;
+}
+
+.search li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.search a {
+    text-decoration: none;
+}
+
+.login {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.login h5 {
+    margin-bottom: 0;
+}
+
+.form-register {
+    /* margin-left: 3%; */
+}
+
+.form-login input {
+    width: 360px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 13px;
+    /* color: rgb(240, 236, 236); */
+}
+
+.form-register input {
+    width: 360px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 13px;
+}
+
+.form-register button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.button-container {
+    padding-top: 10px;
+}
+
+.form-login button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.form-login h5 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.select-wrapper {
+    width: 360px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: #000000;
+}
+
+.select-wrapper select {
+    width: 100%;
+    height: 35px;
+    appearance: none; 
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    padding: 5px;
+}
+
+.button-img {
+    text-align: left; /* Canh lề trái cho phần input */
+    margin-top: 10px; /* Khoảng cách dưới */
+    text-align: center;
+    align-items: center;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 48px;
+}
+
+.line {
+    width: 1px;
+    min-height: 240px;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.footer {
+    background-color: #2B292C;
+    height: 300px;
+    margin-top: 30px;
+}

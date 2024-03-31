@@ -1,0 +1,118 @@
+.order {
+    border: 1px solid #888;
+}
+.order-item {
+    background-color: #eee9e999;
+    border-radius: 5px;
+}
+
+input {
+    width: 360px;
+    height: 35px;
+    padding: 0 10px !important;
+    margin-bottom: 13px !important;
+    border: 1px solid #888 !important;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 360px;
+    height: 35px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    width: 15px;
+    margin-bottom: 0 !important;
+    margin-left: 5px;
+}
+
+.notecard {
+    width: 360px !important;
+    color: #000;
+    line-height: normal;
+    padding: 10px;
+    border:1px solid #888 !important;
+}
+
+.order-item {
+    padding: 4px;
+    overflow: hidden;
+}
+.order-items {
+    overflow-y: scroll;
+}
+.order-items::-webkit-scrollbar {
+    width: 4px;
+}
+.order-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+.order-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.order-item:hover {
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart {
+    background-color: #333;
+    color: white;
+    width: 350px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -350px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.notecard {
+    width: 310px;
+    color: #000;
+    line-height: normal;
+    padding: 10px;
+    border-color: #fff;
+}
+
+.btn-success {
+    background-color: #98b021 !important;
+    border-color: #98b021;
+    bottom: 15px;
+    width: 310px;
+    padding: 6px 10px;
+}
+
+.cart-active {
+    right: 0;
+}
+
+.filter-blur {
+    filter: blur(5px);
+}

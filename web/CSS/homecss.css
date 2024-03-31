@@ -1,0 +1,484 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 3, 2024, 9:28:27 PM
+    Author     : haqua
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: intro;
+}
+
+.topmenu {
+    position: relative;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fill {
+    position: relative;
+    background: url(../picture/banner.jpg) no-repeat center center/cover;
+    height: 870px; /* Set the height of the banner */
+}
+
+.top-bar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-weight: 600;
+    
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo-img {
+    position: relative;
+    width: 250px;
+    z-index: 1;
+}
+
+.top-bar .cb-menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.top-bar .cb-menu li {
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar-nav .navbar-search,
+.navbar-nav .navbar-register,
+.navbar-shopcart {
+    margin-left: 10px;
+}
+
+.header__cart-notice {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 1px 7px;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid #EE4D2D;
+    color: white;
+    background-color: #EE4D2D;
+}
+
+.wp-block-image img {
+    max-width: 100%; /* Thiết lập chiều rộng tối đa là 100% của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ khung của hình ảnh được giữ nguyên */
+}
+
+
+.time-info {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    color: #fff;
+    z-index: 1;
+    line-height: 1.65em;
+    background-color: rgba(43,41,44,.8);
+    padding: 24px 24px 24px 30px;
+    display: grid;
+    grid-row-gap: 14px;
+    grid-template-columns: 1fr;
+}
+
+.time-info-block {
+    border-left: solid 2px #fff;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2B292C;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.heading-best-seller {
+    font-family: intro;
+}
+
+.item {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các item */
+    overflow-x: auto; /* Cho phép cuộn nếu các phần tử con vượt quá kích thước của .item */
+}
+
+.best-seller-product {
+    display: flex;
+    flex-wrap: nowrap; /* Ngăn chặn các phần tử con chuyển dòng */
+    justify-content: flex-start; /* Căn trái các phần tử con */
+    align-items: center;
+    width: auto; /* Không thiết lập kích thước cố định, để nó tự động thay đổi theo kích thước các phần tử con */
+}
+
+.best-seller-product a {
+    flex-shrink: 0;
+    margin: 0 5px; /* Khoảng cách giữa các ảnh */
+}
+
+.best-seller-product a img {
+    width: 250px; /* Thiết lập kích thước cố định cho mỗi ảnh */
+    height: auto; /* Đảm bảo tỷ lệ khung của hình ảnh được giữ nguyên */
+    display: block; /* Đảm bảo mỗi ảnh là một khối dạng block */
+}
+
+.owl-next {
+    top: 50%; 
+    border: solid 4px #869791;
+    color: #869791;
+    margin: 5px;
+    padding: 3px 10px; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-next:hover {
+    background-color: #869791;
+    color: white;
+}
+
+.owl-next i {
+    font-size: 20px;
+}
+
+.owl-prev {
+    top: 50%; 
+    border: solid 4px #869791;
+    color: #869791;
+    margin: 5px;
+    padding: 3px 10px; 
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.owl-prev:hover {
+    background-color: #869791;
+    color: white;
+}
+
+.owl-prev i {
+    font-size: 20px;
+}
+
+.slogan {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-position: center center;
+    margin-bottom: 100px; /* Increase margin to make space for footer */
+}
+
+
+.slogan img {
+    max-width: 100%; /* Thiết lập chiều rộng tối đa là 100% của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ khung của hình ảnh được giữ nguyên */
+}
+
+.slogan .text {
+    font-size: 35px;
+    background-color: #2B292C;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+    padding: 16px;
+    top: 50%;
+    left: 40%;
+}
+
+.slogan .text p {
+    line-height: normal;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Thêm align-items để căn chỉnh các phần tử theo chiều dọc */
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.policy-delivery,
+.policy-contact {
+    display: inline-block;
+    align-items: center;
+}
+
+.policy-delivery img,
+.policy-contact img {
+    font-size: 50px;
+    max-width: 100px; /* Đặt kích thước tối đa cho ảnh */
+}                                                           
+
+.policy .separator {
+    margin-bottom: 40px;
+    color: #000000; /* Màu sắc của dấu | */
+    font-size: 100px; 
+    display: inline-block; 
+    width: 1px; 
+}
+
+.footer {
+    background-color: #2B292C;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: intro;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer_Left,
+.footer_Right {
+    width: 45%;
+}
+
+.footer_Left hr,
+.footer_Right hr {
+    border: 1px solid #869791;
+    margin-bottom: 20px;
+}
+
+.footer_content {
+    display: flex;
+}
+
+.footer_link,
+.footer_support {
+    flex: 1;
+}
+
+.footer_link ul,
+.footer_support ul {
+    list-style: none;
+}
+
+.footer_link ul li,
+.footer_support ul li {
+    margin-bottom: 10px;
+}
+
+.footer_link ul li a,
+.footer_support ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link ul li a:hover,
+.footer_support ul li a:hover {
+    color: #EE4D2D;
+}
+
+.footer_support ul li:last-child {
+    margin-right: 0;
+}
+
+hr {
+    border-top: dotted 1px #C8C8C8;
+}
+
+.footer_link_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_icon {
+    font-size: 50px;
+}
+
+.Teas-inner {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+    z-index: 9999 !important;
+    background-color: #2B292C;
+    padding: 20px;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-inner {
+    padding-right: 15px;
+}
+
+.Teas-inner.show {
+    display: flex; 
+}
+
+.Teas-inner .fa-caret-up {
+    position: absolute;
+    text-align: center;
+    color: #2B292C; 
+    font-size: 25px; 
+    cursor: pointer; 
+    top: -14px;
+    right: 45.5%; 
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: clip;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.best-seller-product {
+    display: flex;
+    flex-wrap: nowrap; /* Ngăn chặn các phần tử con chuyển dòng */
+    justify-content: center !important; /* Căn trái các phần tử con */
+    align-items: center;
+    width: auto; /* Không thiết lập kích thước cố định, để nó tự động thay đổi theo kích thước các phần tử con */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: grey !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    --swiper-navigation-size: 30px !important;
+    border: grey solid 4px !important;
+}
+.slider {
+    max-width: 1500px;
+}
+
+
+.navbar-shopcart.authenticated:hover .headernavbar-user-menu {
+    display: block;
+}
+
+.headernavbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% - 6px);
+    right: 0;
+    width: 160px;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;
+    margin-right: 10px;
+}
+
+.headernavbar-user-menu::before {
+    content: "";
+    z-index: -1;
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+}
+
+
+.headernavbar-user-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 6px 16px;
+    display: block;
+}
+
+.menu-icon i {
+    font-size: 24px;
+}
+.navbar-search {
+    position: relative;
+}
+
+.navbar-search input[type="text"] {
+    padding: 8px 30px 8px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #2B292C;
+    font-size: 16px;
+    width: 200px;
+}
+
+.navbar-search input[type="text"]::placeholder {
+    color: #2B292C;
+    opacity: 0.7;
+}
+
+.navbar-search button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-search button:hover {
+    color: #EE4D2D;
+}
+
+
+

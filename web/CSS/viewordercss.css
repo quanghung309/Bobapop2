@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bar {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    z-index: 2;
+    padding: 16px;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-bar img {
+    max-width: 250px;
+}
+
+.list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-family: intro;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.list a:hover {
+    color: green;
+    text-decoration: none;
+    transition: 0.5;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    margin-right: 5px;
+}
+
+.search li {
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.search a {
+    text-decoration: none;
+}
+
+.navbar-search {
+    position: relative;
+}
+
+.navbar-search input[type="text"] {
+    padding: 8px 30px 8px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #2B292C;
+    font-size: 16px;
+    width: 200px;
+}
+
+.navbar-search input[type="text"]::placeholder {
+    color: #2B292C;
+    opacity: 0.7;
+}
+
+.navbar-search button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar-search button:hover {
+    color: #EE4D2D;
+}
+
+
+
+.heading {
+    margin-left: 670px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: intro;
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.content-item {
+    padding: 10px 20px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+}
+
+.order-card {
+    width: 800px;
+    height: 50px;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+.order-card-active {
+    height: auto;
+}
+.order-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-card-header {
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+}
+.order-card-header-icon {
+    font-size: 12px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+.rotate-90 {
+    transform: rotate(90deg);
+}
+.order-card-header h6 {
+    font-weight: 600;
+    font-size: 14px;
+
+    margin: 0;
+}
+.order-card-status {
+        width: 70px;
+    display: flex;
+    justify-content: end;
+}
+.order-card-status p {
+    margin: 0;
+    font-size: 10px;
+    widows: fit-content;
+}
+.order-card-detail {
+    margin-top: 10px;
+    border-top: 3px solid rgb(246, 246, 246);
+}
+.order-detail {
+    margin-top: 10px;
+}
+.order-detail-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.order-detail-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.order-detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sugarIce {
+    display: flex;
+}
+.sugarIce p {
+    margin-right: 4px;
+}
+.text-12 {
+    font-size: 12px;
+}
+.order-detail-info {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 0%;
+}
+.order-btn a {
+    text-decoration: none;
+    font-size: 12px;
+    background-color: black;
+    padding: 2px 6px;
+    margin-right: 4px;
+    color: white;
+    border-radius: 5px;
+}
+
+.totalPrice p {
+    font-size: 12px;
+    color: red;
+    margin-right: 5px;
+}
+.pending {
+    color: white;
+    background-color: orange;
+    padding: 2px 4px;
+}
+.cancelled {
+    color: white;
+    background-color: red;
+    padding: 2px 4px;
+}
+.done {
+    color: white;
+    background-color: green;
+    padding: 2px 4px;
+}
+.order-card-price {
+    display: flex;
+    align-items: center;
+}
+.order-detail-item {
+    padding: 8px;
+}
+.order-detail:hover {
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+}
+.totalPrice {
+    color: red;
+    font-size: 14px;
+}
+.order-card-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+}
+.date{
+    font-size: 12px;
+    color: #888;
+}
+.time {
+    font-size:10px;
+    color:#888;
+}
+
+.hidden {
+    display: none;
+}
+.footer {
+    margin-top: 20px;
+    background-color: #2B292C;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: intro;
+    font-weight: 600;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer_Left,
+.footer_Right {
+    width: 45%;
+}
+
+.footer_Left hr,
+.footer_Right hr {
+    border: 1px solid #869791;
+    margin-bottom: 20px;
+}
+
+.footer_content {
+    display: flex;
+}
+
+.footer_link,
+.footer_support {
+    flex: 1;
+}
+
+.footer_link ul,
+.footer_support ul {
+    list-style: none;
+}
+
+.footer_link ul li,
+.footer_support ul li {
+    margin-bottom: 10px;
+}
+
+.footer_link ul li a,
+.footer_support ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link ul li a:hover,
+.footer_support ul li a:hover {
+    color: green;
+}
+
+.footer_support ul li:last-child {
+    margin-right: 0;
+}
+
+hr {
+    border-top: dotted 1px #C8C8C8;
+}
+
+.footer_link_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_icon {
+    font-size: 50px;
+    /* color: white; */
+}
+
+
+.Teas-inner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+    z-index: 9999 !important;
+    background-color: #2B292C;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-inner {
+    padding-right: 15px;
+}
+
+.Teas-inner.show {
+    display: flex;
+}
+
+.Teas-inner .fa-caret-up {
+    position: absolute;
+    text-align: center;
+    color: #2B292C;
+    font-size: 25px;
+    cursor: pointer;
+    top: -14px;
+    right: 51%;
+}
+
+.produce-inner {
+    list-style: none;
+
+}
+
+.produce-inner a {
+    text-decoration: none;
+    color: white;
+    font-family: intros;
+}
+
+
+.load-more-button button {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 200px; /* Set the height to match the item's height */
+    width: 200px; /* Make the button fill the entire width of its container */
+    padding: 0; /* Remove any default padding */
+    background: #f0f0f0; /* Remove background */
+    border: 1px solid #fff; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: opacity 0.3s, background-color 0.3s; /* Add transition effect for opacity and background color */
+    position: relative; /* Position the icon relative to the button */
+}
+
+.load-more-button button:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.load-more-button button i {
+    font-size: 90px; /* Set the font size of the icon */
+    margin-right: 5px; /* Add some right margin to separate the icon from the button text */
+    position: absolute; /* Position the icon absolutely */
+    top: 50%; /* Align the icon vertically */
+    left: 50%; /* Align the icon horizontally */
+    transform: translate(-50%, -50%); /* Center the icon */
+    transition: color 0.3s; /* Add transition effect for color */
+    color: #ccc;
+}
+
+.load-more-button button:hover i {
+    color: #000; /* Change color of the icon on hover */
+}
+
+
+.add {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #28a745; /* Màu nền xanh lá cây */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagination a,
+.pagination span {
+    padding: 8px 12px;
+    margin-right: 5px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Màu nền mặc định */
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2; /* Màu nền khi hover */
+}
+
+.pagination span.current {
+    background-color: #007bff; /* Màu nền cho trang hiện tại */
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+table {
+    width: 100%; /* Set the table width to 100% of its container */
+    border-collapse: collapse; /* Collapse borders between table cells */
+}
+
+th, td {
+    padding: 8px; /* Padding for table cells */
+    border: 1px solid #ddd; /* Border style for table cells */
+    text-align: left; /* Align text to the left within cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Background color for table header cells */
+    color: #333; /* Text color for table header cells */
+}
+
+
+.icon-trash {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Adjust as needed */
+}
+
+.icon-trash a {
+    text-decoration: none;
+    
+}
+
+.icon-trash i {
+    color: #000;
+}
+.cart {
+    background-color: #333;
+    color: white;
+    width: 350px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -350px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+.notecard {
+    width: 310px;
+    color: #000;
+    line-height: normal;
+    padding: 10px;
+    border-color: #fff;
+}
+
+.btn-success {
+    background-color: #98b021 !important;
+    border-color: #98b021;
+    bottom: 15px;
+    width: 310px;
+    padding: 6px 10px;
+}
+
+.cart-active {
+    right: 0;
+}
+
+.filter-blur {
+    filter: blur(5px);
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info h4 {
+    flex: 1 1 0%;
+}
+.user-info p {
+    color: #666;
+    font-size: 14px;
+}
+.user-info a {
+    font-size: 12px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.total {
+    color: white;
+    background-color: black;
+    padding: 2px 4px;
+}
+.pending {
+    color: white;
+    background-color: orange;
+    padding: 2px 4px;
+}
+.cancelled {
+    color: white;
+    background-color: red;
+    padding: 2px 4px;
+}
+.done {
+    color: white;
+    background-color: green;
+    padding: 2px 4px;
+}
+
+.close-order {
+    height: 38px;
+    overflow: hidden;
+}
+.status-btn {
+    display: flex;
+}
+.status-btn-a,.active-total,.active-done,.active-pending,.active-cancel {
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    padding: 3px 6px; /* Điều chỉnh kích thước nút */
+    border: 1px solid #ccc; /* Viền của nút */
+    border-radius: 5px; /* Độ cong viền */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    margin-bottom:10px;
+}
+
+.status-btn-a:hover {
+    background-color: #f0f0f0; /* Màu nền khi di chuột vào */
+}
+
+.active-total {
+
+    background-color: black;
+    color : white !important;
+}
+.active-done {
+    color:white;
+    background-color: green;
+}
+.active-pending {
+    color: white;
+    background-color: orange;
+}
+.active-cancel {
+    color: white;
+    background-color: red;
+}
